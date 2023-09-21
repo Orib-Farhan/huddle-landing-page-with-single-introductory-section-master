@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Open Sans";
+}
+
+body {
+    background: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+} 
+
+.text-sec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.change{
+    font-size: 2rem;
+}
+
+.change-t {
+    font-size: 0.8rem;
+}
+
+i {
+    color: #ffffff;
+}
+
+i:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    max-width: 400px;
+    height: 90vh;
+
+}
+
+
+.font:hover {
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 45px;
+    border-radius: 2rem;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 41%) 0.2rem 0.5rem 1rem 0px;
+}
+
+.register:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.font-awesome {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.font {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+@media (min-width:900px) and (max-width:1000px) {
+    .change{
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width:800px) and (max-width:899px) {
+    .change{
+        font-size: 1.5rem;
+    }
+    .change-t {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:700px) and (max-width:799px) {
+    .change{
+        font-size: 1.4rem;
+    }
+    .change-t {
+        font-size: 0.65rem;
+    }
+}
+
+@media (min-width:639px) and (max-width:699px) {
+    .change{
+        font-size: 1.2rem;
+    }
+    .change-t {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:639px) {
+    body {
+        background: url(images/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+    } 
+
+    .second-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        min-width: 360px;
+        text-align: center;
+        align-items: center;
+        max-width: none;
+        height: 400px;
+    
+    }
+
+    .register {
+        align-self: center;
+    }
+
+    .text-sec {
+        height: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+       
+    }
+
+    .change{
+        font-size: 2rem;
+    }
+
+    .change-t {
+        font-size: 1rem;
+    }
+
+    .font-awesome {
+        margin: 15px 0px 15px 0px;
+    }
+}
